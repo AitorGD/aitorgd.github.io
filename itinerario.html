@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Itinerario del Día</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Itinerario</h2>
+  <div id="contenido-itinerario" class="card"></div>
+  <!--<div id="mapa-dia" style="height: 400px; margin-top: 20px;"></div> -->
+  <div class="botones-navegacion">
+    <button onclick="navegar(-1)">← Día anterior</button>
+    <button onclick="window.location.href='calendario.html'">Volver al calendario</button>
+    <button onclick="navegar(1)">Día siguiente →</button>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/itinerario.js"></script>
+  <div id="footer"></div>
+  <script src="js/footer.js"></script>
+  
+  
+</body>
+</html>
