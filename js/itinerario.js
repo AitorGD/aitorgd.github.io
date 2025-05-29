@@ -69,33 +69,69 @@ function inicializarMapa() {
   const mapaElemento = document.getElementById("mapa-dia");
   if (!mapaElemento || coordenadas.length === 0) return;
 
-  const centro = coordenadas[0]; // centramos en la primera coordenada
+  const centro = coordenadas[0];
 
   mapa = new google.maps.Map(mapaElemento, {
     zoom: 13,
     center: { lat: centro.lat, lng: centro.lng },
   });
-  console.log("Hola estoy en el mapa con coords"+centro.lat)
+
   const bounds = new google.maps.LatLngBounds();
 
-  coordenadas.forEach(punto => {
-      console.log("Hola estoy en el mapa con coords"+punto.titulo)
+  coordenadas.forEach((punto, index) => {
+    let iconUrl;
+
+    if (index === 0) {
+      console.log(index)
+      // Primera coordenada: icono de casa
+      iconUrl = "../img/casa.png";
+    } else {
+      switch (punto.tipo) {
+        case "friki":
+          iconUrl = "../img/friki.png";
+          break;
+        case "tren":
+          iconUrl = "../img/tren.png";
+          break;
+        case "aeropuerto":
+          iconUrl = "../img/avion.png";
+          break;
+        case "templo":
+          iconUrl = "../img/templo.png";
+          break;
+        default:
+          iconUrl = "../img/edificio.png";
+      }
+    }
+
     const marker = new google.maps.Marker({
       position: { lat: punto.lat, lng: punto.lng },
       map: mapa,
       title: punto.titulo || "Ubicación",
+      icon: {
+        url: iconUrl, // tu URL de icono
+        scaledSize: new google.maps.Size(30, 30) // muy pequeño
+      }
     });
-  
-  bounds.extend(marker.getPosition());
 
-        // Opcional: mostrar info window al hacer clic
-        const infowindow = new google.maps.InfoWindow({
-          content: `<strong>${punto.titulo}</strong>`,
-        });
+    bounds.extend(marker.getPosition());
 
-        marker.addListener("click", () => {
-          infowindow.open(mapa, marker);
-        });
-        mapa.fitBounds(bounds);
+    const contentHtml = `
+      <div style="max-width:200px">
+        <h4>${punto.titulo || "Ubicación"}</h4>
+        ${punto.imagen ? `<img src="img/${punto.imagen}" alt="${punto.titulo}" style="width:100%; margin-top:5px;">` : ""}
+        ${punto.descripcion ? `<p>${punto.descripcion}</p>` : ""}
+      </div>
+    `;
+
+    const infowindow = new google.maps.InfoWindow({
+      content: contentHtml,
+    });
+
+    marker.addListener("click", () => {
+      infowindow.open(mapa, marker);
+    });
   });
+
+  mapa.fitBounds(bounds);
 }
