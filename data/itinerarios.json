@@ -3,9 +3,11 @@
     "fecha": "23 de agosto",
     "descripcion": "Llegada a Tokio",
     "coste": "¥0",
-    "imagen": "tokyo_noche.jpg",
-    "lat": 35.682839,
-    "lng": 139.759455,
+    "imagen": "tokio.jpg",
+    "coordenadas": [
+      { "lat": 35.7238, "lng": 139.6639, "titulo": "Airbnb" },
+      { "lat": 35.765, "lng": 140.393, "titulo": "Aeropuerto Internacional de Narita" }
+    ],
     "actividad_dia_completo": null,
     "desayuno": null,
     "actividad_manana": null,
@@ -19,8 +21,11 @@
     "descripcion": "Tradición, frikismo y luces de ciudad",
     "coste": "¥2,000",
     "imagen": "asakusa_akihabara.jpg",
-    "lat": 35.7119,
-    "lng": 139.7967,
+    "coordenadas": [
+      { "lat": 35.6895, "lng": 139.6917, "titulo": "Templo Senso-ji" },
+      { "lat": 35.698, "lng": 139.773, "titulo": "Akihabara" },
+      { "lat": 35.693081, "lng": 139.688265, "titulo": "Mirador en Shinjuku" }
+    ],
     "desayuno": "En alojamiento",
     "actividad_manana": "Templo Sensō-ji, calle Nakamise-dori",
     "comida": "Snack callejero (taiyaki, dango...)",
@@ -33,8 +38,11 @@
     "descripcion": "Compras, Pokémon y mechas",
     "coste": "¥4,000",
     "imagen": "shibuya_pokemon.jpg",
-    "lat": 35.6595,
-    "lng": 139.7005,
+    "coordenadas": [
+      { "lat": 35.664596, "lng": 139.698711, "titulo": "Shibuya" },
+      { "lat": 35.668705, "lng": 139.705336, "titulo": "Harajuku" },
+      { "lat": 35.624438, "lng": 139.77549, "titulo": "Gundam" }
+    ],
     "desayuno": "Starbucks o konbini",
     "actividad_manana": "Shibuya y tiendas geek (Pokémon Center, Nintendo Tokyo)",
     "comida": "Parco o Loft (comida rápida)",
@@ -47,8 +55,11 @@
     "descripcion": "Anime y nostalgia",
     "coste": "¥3,000",
     "imagen": "ikebukuro_nakano.jpg",
-    "lat": 35.7289,
-    "lng": 139.7101,
+    "coordenadas": [
+      { "lat": 35.729799, "lng": 139.710242, "titulo": "Ikebukuro" },
+      { "lat": 35.709241, "lng": 139.665685, "titulo": "Nakano Broadway" },
+      { "lat": 35.698, "lng": 139.773, "titulo": "Akihabara" }
+    ],
     "desayuno": "Alojamiento",
     "actividad_manana": "Ikebukuro: Pokémon Center Mega Tokyo, Sunshine City",
     "comida": "Centro comercial",
