@@ -6,7 +6,7 @@
     "imagen": "tokio.jpg",
     "coordenadas": [
       { "lat": 35.7238, "lng": 139.6639, "titulo": "Airbnb" },
-      { "lat": 35.765, "lng": 140.393, "titulo": "Aeropuerto Internacional de Narita" }
+      { "lat": 35.765, "lng": 140.393, "titulo": "Aeropuerto Internacional de Narita", "tipo":"aeropuerto" }
     ],
     "actividad_dia_completo": null,
     "desayuno": null,
@@ -22,7 +22,8 @@
     "coste": "¥2,000",
     "imagen": "asakusa_akihabara.jpg",
     "coordenadas": [
-      { "lat": 35.6895, "lng": 139.6917, "titulo": "Templo Senso-ji" },
+      { "lat": 35.7238, "lng": 139.6639, "titulo": "Airbnb" },
+      { "lat": 35.6895, "lng": 139.6917, "titulo": "Templo Senso-ji", "tipo":"templo" },
       { "lat": 35.698, "lng": 139.773, "titulo": "Akihabara" },
       { "lat": 35.693081, "lng": 139.688265, "titulo": "Mirador en Shinjuku" }
     ],
@@ -39,6 +40,7 @@
     "coste": "¥4,000",
     "imagen": "shibuya_pokemon.jpg",
     "coordenadas": [
+      { "lat": 35.7238, "lng": 139.6639, "titulo": "Airbnb" },
       { "lat": 35.664596, "lng": 139.698711, "titulo": "Shibuya" },
       { "lat": 35.668705, "lng": 139.705336, "titulo": "Harajuku" },
       { "lat": 35.624438, "lng": 139.77549, "titulo": "Gundam" }
@@ -56,9 +58,10 @@
     "coste": "¥3,000",
     "imagen": "ikebukuro_nakano.jpg",
     "coordenadas": [
+      { "lat": 35.7238, "lng": 139.6639, "titulo": "Airbnb" },
       { "lat": 35.729799, "lng": 139.710242, "titulo": "Ikebukuro" },
       { "lat": 35.709241, "lng": 139.665685, "titulo": "Nakano Broadway" },
-      { "lat": 35.698, "lng": 139.773, "titulo": "Akihabara" }
+      { "lat": 35.698, "lng": 139.773, "titulo": "Akihabara", "tipo":"friki" }
     ],
     "desayuno": "Alojamiento",
     "actividad_manana": "Ikebukuro: Pokémon Center Mega Tokyo, Sunshine City",
@@ -72,9 +75,12 @@
     "descripcion": "Día Ghibli + traslado a Osaka",
     "coste": "¥16,000",
     "imagen": "ghibli_osaka.jpg",
-    "lat": 35.6962,
-    "lng": 139.5703,
-    "actividad_dia_completo": "Museo Ghibli e Inokashira Park por la mañana, luego viaje en Shinkansen y cena en Dotonbori",
+    "coordenadas": [
+      { "lat": 35.7238, "lng": 139.6639, "titulo": "Airbnb" },
+      { "lat": 35.696173, "lng": 139.570632, "titulo": "Museo Ghibli", "tipo":"friki" },
+      { "lat": 35.696256, "lng": 139.571487, "titulo": "Inokashira Park" }
+    ],
+    "actividad_dia_completo": "Museo Ghibli e Inokashira Park por la mañana y cena en Dotonbori",
     "desayuno": null,
     "actividad_manana": null,
     "comida": null,
@@ -84,11 +90,16 @@
   },
   {
     "fecha": "28 de agosto",
-    "descripcion": "Osaka cultural y retro",
+    "descripcion": "Viaje en Shinkansen, Osaka cultural y retro",
     "coste": "¥3,000",
     "imagen": "castillo_osaka.jpg",
-    "lat": 34.6873,
-    "lng": 135.5262,
+    "coordenadas": [
+      { "lat": 34.693757, "lng": 135.501454, "titulo": "Falta Reservar Hotel" },
+      { "lat": 34.687373, "lng": 135.525856, "titulo": "Castillo de Osaka", "tipo":"templo" },
+      { "lat": 34.65209, "lng": 135.506191, "titulo": "Shinsekai" },
+      { "lat": 34.669031, "lng": 135.501572, "titulo": "Dotonbori" },
+      { "lat": 34.7336, "lng": 135.5000, "titulo": "Shinkansen ", "tipo":"tren"  }
+    ],
     "desayuno": "Hotel en Osaka",
     "actividad_manana": "Castillo de Osaka y jardines",
     "comida": "Kushikatsu o udon local",
@@ -101,8 +112,11 @@
     "descripcion": "División de grupos",
     "coste": "¥8,600 (USJ) o ¥4,000 (alternativo)",
     "imagen": "universal_umeda.jpg",
-    "lat": 34.6654,
-    "lng": 135.4323,
+    "coordenadas": [
+      { "lat": 34.693757, "lng": 135.501454, "titulo": "Falta Reservar Hotel" },
+      { "lat": 34.665639, "lng": 135.432453, "titulo": "Universal Studios Japan", "tipo":"friki" },
+      { "lat": 34.661482, "lng": 135.496733, "titulo": "Namba Yasaka" }
+    ],
     "actividad_dia_completo": "Grupo A: Universal Studios Japan\nGrupo B: Namba Yasaka, Amerika-mura, Umeda",
     "desayuno": null,
     "actividad_manana": null,
@@ -116,8 +130,11 @@
     "descripcion": "Océano + futuro",
     "coste": "¥4,400",
     "imagen": "kaiyukan_osaka.jpg",
-    "lat": 34.6545,
-    "lng": 135.4283,
+    "coordenadas": [
+      { "lat": 34.693757, "lng": 135.501454, "titulo": "Falta Reservar Hotel" },
+      { "lat": 34.654546, "lng": 135.428921, "titulo": "Acuario Kaiyukan"},
+      { "lat": 34.638129, "lng": 135.414835, "titulo": "Cosmo Tower" }
+    ],
     "desayuno": "Alojamiento",
     "actividad_manana": "Acuario Kaiyukan",
     "comida": "Tempozan Marketplace",
@@ -130,8 +147,12 @@
     "descripcion": "Nara o Den Den Town + traslado a Kioto",
     "coste": "¥3,000",
     "imagen": "nara_denden.jpg",
-    "lat": 34.6851,
-    "lng": 135.8048,
+    "coordenadas": [
+      { "lat": 34.693757, "lng": 135.501454, "titulo": "Falta Reservar Hotel" },
+      { "lat": 34.638129, "lng": 135.414835, "titulo": "Templo Katsuo-ji", "tipo":"templo"},
+      { "lat": 34.296309, "lng": 135.881682, "titulo": "Nara", "tipo":"templo" },
+      { "lat": 34.7336, "lng": 135.5000, "titulo": "Shinkansen ", "tipo":"tren"  }
+    ],
     "actividad_dia_completo": "Templo Katsuo-ji + tarde en Nara o Den Den Town. Viaje a Kioto y visita nocturna a Gion.",
     "desayuno": null,
     "actividad_manana": null,
@@ -145,8 +166,11 @@
     "descripcion": "Tradición en Higashiyama",
     "coste": "¥400",
     "imagen": "higashiyama.jpg",
-    "lat": 34.9947,
-    "lng": 135.7850,
+    "coordenadas": [
+      { "lat": 34.998510, "lng": 135.759489, "titulo": "Hotel" },
+      { "lat": 34.99890766217608,  "lng":135.78080478650872, "titulo": "Tienda Ghibli", "tipo":""},
+      { "lat": 34.994303, "lng": 135.784439, "titulo": "Templo Kiyomizu-dera ", "tipo":"templo"  }
+    ],
     "desayuno": "Starbucks tradicional",
     "actividad_manana": "Tiendas tradicionales, tienda Ghibli",
     "comida": "Snack japonés tradicional",
@@ -159,8 +183,11 @@
     "descripcion": "Templos icónicos",
     "coste": "¥700",
     "imagen": "kinkakuji.jpg",
-    "lat": 35.0394,
-    "lng": 135.7292,
+    "coordenadas": [
+      { "lat": 34.998510, "lng": 135.759489, "titulo": "Hotel" },
+      { "lat": 34.796064,  "lng":135.248623, "titulo": "Adashino Nenbutsu-ji", "tipo":"templo"},
+      { "lat": 35.039529, "lng": 135.729537, "titulo": "Kinkaku-ji", "tipo":"templo"  }
+    ],
     "desayuno": "Hotel",
     "actividad_manana": "Kinkaku-ji",
     "comida": "Comida en Arashiyama",
@@ -173,8 +200,11 @@
     "descripcion": "Despedida de Kioto",
     "coste": "¥700",
     "imagen": "fushimi_ohara.jpg",
-    "lat": 34.9671,
-    "lng": 135.7727,
+    "coordenadas": [
+      { "lat": 34.998510, "lng": 135.759489, "titulo": "Hotel" },
+      { "lat": 34.96895,  "lng":135.769258, "titulo": "Fushimi Inari", "tipo":"templo"},
+      { "lat": 35.251284, "lng": 140.390831, "titulo": "Ohara", "tipo":""  }
+    ],
     "actividad_dia_completo": "Fushimi Inari + visita a Ohara (Sanzen-in, Shorin-in) y vuelta a Tokio",
     "desayuno": null,
     "actividad_manana": null,
