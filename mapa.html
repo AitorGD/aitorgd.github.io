@@ -7,10 +7,13 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
+  
   <h2>Mapa de los Lugares</h2>
-  <div id="map" style="height: 500px;"></div>
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="js/mapa.js"></script>
+
+  <div id="map" style="height: 50em; max-width: 800px; margin: auto;"></div>
+  <script src="js/mapa_google.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-veXgCi4FqNIYhEWgbQoNmGEhOCueju4&callback=inicializarMapa"></script>
+  
   <div class="botones-navegacion">
     <button onclick="window.location.href='index.html'">Volver al inicio</button>
   </div>
